@@ -1,0 +1,53 @@
+<h1>Deaf Aunty</h1>
+
+<p>Say something to Aunty</p>
+
+
+<!--   Title: <input type="text" name="post[title]">
+  <br/>
+  <br/>
+  Price: <input type="text" name="post[price]">
+  <br>
+  <br/>
+  Description: <textarea name="post[description]"></textarea>
+  <br/>
+  <br/> -->
+<p>This is "get" form.</p>
+<form action="/cool_url" method="get">
+  <input type="text" name="user_input_1">
+  <input type="submit" value="Say It!">
+</form>
+<!--   <input type="submit" value="Say It!"> -->
+
+
+<p>This is "post" form.</p>
+<form action="/cool_url" method="post">
+  <textarea cols="40" rows="5" name="user_input_2"></textarea>
+  <br/>
+  <br/>
+  <select name="mydropdown">
+    <option value="test1">Test 1</option>
+    <option value="test2">Test 2</option>
+    <option value="test3">Test 3</option>
+  </select>
+  <br/>
+  <br/>
+
+  <input type="radio" name="radio_option1" value="Milk">Milk<br/>
+  <input type="radio" name="radio_option1" value="Butter" checked> Butter<br/>
+  <input type="radio" name="radio_option1" value="Cheese"> Cheese<br/>
+  <br/>
+  <hr/>
+  <br/>
+  <input type="checkbox" name="option1" value="Test4"> Milk<br/>
+  <input type="checkbox" name="option2" value="Butter" checked> Butter<br/>
+  <input type="checkbox" name="option3" value="Cheese"> Cheese<br/>
+  <br/>
+  <input type="submit" value="Say It!">
+</form>
+
+
+
+<p>URL parameters:</p>
+<p>Aunty so dumb</p>
+<%= params %>
